@@ -1,0 +1,21 @@
+Функция S(n,m)
+	вернуть n*m
+INPUT a
+INPUT b
+INPUT c
+INPUT d
+INPUT e
+INPUT f
+INPUT g
+INPUT k
+INPUT l
+IF a,b,c,d,e,f,g,k,l не принадлежат вещественным положительным числам THEN:
+	вывести 'ошибка'
+ELSE: 
+	walls := 2*(s(c, b)+s(c, a)) - (2*s(d, e)+s(f, g))
+    	wallpaper := s(k, l)
+    	n := округлить(walls/wallpaper)    //математическое округление
+    	if n < walls/wallpaper:
+        	n := n + 1
+	вывести n
+
